@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  /* 1 rem sẽ = 10px */
+  font-size: 62.5%;
+}
+
+/* Khôi phục lại cỡ chữ mặc định theo rem */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#header {
+  display: flex;
+  z-index: 1;
+  position: sticky;
+  top: -28px;
+  padding: 20px 0;
+  background-color: #ffda77;
+}
+
+#header .logo {
+  margin-left: 20px;
+}
+
+#header .ds_node {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  margin-left: calc(800px - 85px);
+}
+
+#header .ds_node .active {
+  color: #171100;
+}
+
+#header .ds_node .active::after {
+  content: "";
+  display: block;
+  margin-top: 2px;
+  height: 3px;
+  width: 22px;
+  background-color: #171100;
+}
+
+#header .ds_node li {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-right: 10px;
+  color: #5f5b53;
+}
+
+#header .ds_node li:hover {
+  color: #171100;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#header .btn_sign-up {
+  margin-left: 70px;
+  padding: 20px 40px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#header .btn_sign-up:hover {
+  background: #999;
+}
+
+#content {
+  margin-top: 120px;
+  background-color: #fbeecdb0;
+  padding: 20px;
+}
+
+.learn {
+  display: flex;
+}
+
+.leader_left {
+  position: relative;
+  margin: 0 100px;
+}
+
+.leader_left .learn_img {
+  width: 500px;
+  height: 600px;
+  border-radius: 40px;
+}
+
+.leader_left .gt {
+  background-color: #fff;
+  width: auto;
+  width: 250px;
+  border-radius: 40px;
+  padding: 25px;
+  position: absolute;
+  bottom: 30px;
+  right: -100px;
+  box-shadow: 5px 4px 8px 6px #000000;
+}
+
+.leader_left .gt .item-gt {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.leader_left .gt .item-gt .icon-gt {
+  height: 30px;
+}
+
+.leader_left .gt .item-gt .content-gt {
+  margin-left: 30px;
+}
+
+.gt .item-gt .content-gt .sl {
+  color: #736f68;
+}
+
+.title-gt {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #171100;
+}
+
+.leader_right {
+  width: 500px;
+}
