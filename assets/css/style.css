@@ -23,22 +23,36 @@ body {
   background-color: #ffda77;
 }
 
-#header .logo {
-  margin-left: 20px;
+#header .header-container {
+  display: flex;
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
 }
 
-#header .ds_node {
+#header .logo {
+  width: 100px;
+  height: 100px;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav .ds_node {
   display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
-  margin-left: calc(800px - 85px);
+  margin-left: calc(800px - 100px);
 }
 
-#header .ds_node .active {
+.nav .ds_node .active {
   color: #171100;
 }
 
-#header .ds_node .active::after {
+.nav .ds_node .active::after {
   content: "";
   display: block;
   margin-top: 2px;
@@ -47,34 +61,47 @@ body {
   background-color: #171100;
 }
 
-#header .ds_node li {
+.nav .ds_node li {
   font-size: 1.6rem;
   font-weight: 400;
-  margin-right: 10px;
+  margin-right: 20px;
   color: #5f5b53;
 }
 
-#header .ds_node li:hover {
+.nav .ds_node li:hover {
   color: #171100;
   cursor: pointer;
   font-weight: 500;
 }
 
-#header .btn_sign-up {
-  margin-left: 70px;
-  padding: 20px 40px;
-  border-radius: 40px;
-  border: none;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: #fff;
-  background-color: #000;
-  cursor: pointer;
-  margin-top: 20px;
+#header .header-container .btn_sign-up {
+  min-width: 144px;
+  margin-left: 49px;
 }
 
-#header .btn_sign-up:hover {
-  background: #999;
+#header .header-container .btn_sign-up .btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background: #171100;
+}
+
+#header .header-container .btn_sign-up .btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+#header .header-container .btn_sign-up a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 #content {
