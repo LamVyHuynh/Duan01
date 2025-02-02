@@ -30,6 +30,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
+  margin-top: 20px;
 }
 
 #header .logo {
@@ -79,7 +80,7 @@ body {
   margin-left: 49px;
 }
 
-#header .header-container .btn_sign-up .btn {
+.btn {
   display: inline-block;
   min-width: 118px;
   padding: 0 16px;
@@ -92,7 +93,7 @@ body {
   background: #171100;
 }
 
-#header .header-container .btn_sign-up .btn:hover {
+.btn:hover {
   cursor: pointer;
   background: #999;
 }
@@ -105,7 +106,6 @@ body {
 }
 
 #content {
-  margin-top: 120px;
   background-color: #fbeecdb0;
   padding: 20px;
 }
@@ -161,5 +161,85 @@ body {
 }
 
 .leader_right {
+  margin: 0 100px;
   width: 500px;
+}
+
+.leader_right .title {
+  font-size: 5.8rem;
+  font-weight: 700;
+  color: #171100;
+  line-height: 1.17;
+  letter-spacing: -1.16px;
+}
+
+.leader_right .desc {
+  margin-top: 22px;
+  font-size: 1.8rem;
+  color: #5f5b53;
+  line-height: 1.67;
+}
+
+.btn-gr {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.btn-gr .btn-search {
+  min-width: 180px;
+  line-height: 65px;
+  color: #fffaef;
+  background-color: #ffb900;
+}
+
+.btn-gr .btn-search:hover {
+  cursor: pointer;
+  background-color: #999;
+}
+
+.btn-gr .btn-watch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  line-height: 65px;
+  color: #171100;
+  background-color: #fff;
+  border: none;
+  border-radius: 40px;
+}
+
+.btn-gr .btn-watch:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-gr .btn-watch span {
+  margin-left: 10px;
+}
+
+.recent {
+  margin-top: 50px;
+  font-size: 2rem;
+  color: #5f5b53;
+  line-height: 1.75;
+}
+
+.info {
+  margin-top: 8px;
+  font-size: 1.8rem;
+  color: #5f5b53;
+  line-height: 1.67;
+}
+.info strong {
+  font-weight: 700;
+  color: #171100;
+  font-size: 4.4rem;
+  margin-right: 15px;
+  line-height: 1.23;
+}
+
+.info strong:nth-child(2) {
+  margin-left: 28px;
 }
