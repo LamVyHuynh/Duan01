@@ -430,13 +430,13 @@ body {
   line-height: 1.86;
 }
 
-.feedback-items .dots {
+.dots {
   display: flex;
   margin-top: 18px;
   gap: 6px;
 }
 
-.feedback-items .dots .dot {
+.dots .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -444,7 +444,7 @@ body {
   cursor: pointer;
 }
 
-.feedback-items .dots .dot.active_dot {
+.dot.active_dot {
   background-color: #ffb900;
   cursor: default;
 }
@@ -534,4 +534,104 @@ body {
 .features-2 .main-content .body .images .fs_image {
   width: 470px;
   height: 440px;
+}
+/* END: FEATURES 2 */
+
+/* BLOGS */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0;
+  background-color: #fbeecdb0;
+}
+
+.blogs .blog-top {
+  text-align: center;
+}
+
+.blogs .blog-top .desc-blog {
+  width: 448px;
+  margin: 16px auto 0;
+  color: #696262;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.blogs .blog-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+  overflow: hidden;
+}
+
+.blogs .blog-list .item {
+  flex-shrink: 0;
+  width: calc(33.33% - 20px);
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.blogs .blog-list .item .img-blog {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.blogs .blog-list .item .info {
+  padding: 20px 20px 28px;
+}
+
+.blogs .blog-list .item .info .date {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  padding-bottom: 12px;
+  position: relative;
+  display: inline-block;
+  align-items: center;
+}
+
+.blogs .blog-list .item .info .date::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffb900;
+  margin-right: 4px;
+}
+
+.blogs .blog-list .item .info .date::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: -27px;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  background-color: #e2dfda;
+  border-radius: 0.5px;
+}
+
+.blogs .blog-list .item .info a {
+  text-decoration: none;
+}
+
+.blogs .blog-list .item .info .title {
+  margin-top: 12px;
+  line-height: 1.75;
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.blogs .blog-list .item .info .btn-readmore {
+  margin-top: 12px;
+  font-size: 1.4rem;
+}
+
+.blogs .dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
 }
