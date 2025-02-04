@@ -15,27 +15,19 @@ body {
 }
 
 #header {
-  display: flex;
   z-index: 1;
   position: sticky;
   top: -28px;
-  padding: 20px 0;
   background-color: #ffda77;
 }
-
-#header .header-container {
+#header .body {
   display: flex;
-  width: 1170px;
-  max-width: calc(100% - 48px);
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-around;
-  margin-top: 20px;
+  align-items: center;
+  padding: 36px 0 8px;
 }
-
 #header .logo {
-  width: 50px;
-  height: 50px;
+  width: 82px;
+  height: 17px;
 }
 
 .nav {
@@ -45,7 +37,6 @@ body {
 .nav .ds_node {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 20px;
   margin-left: calc(800px - 100px);
 }
 
@@ -75,7 +66,7 @@ body {
   font-weight: 500;
 }
 
-#header .header-container .btn_sign-up {
+#header .btn_sign-up {
   min-width: 144px;
   margin-left: 49px;
 }
@@ -634,4 +625,87 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 38px;
+}
+/* END: BLOGS */
+
+/* FOOTER */
+.footer {
+  background-color: #2e2100;
+  padding: 96px 135px 0;
+}
+
+.footer .row {
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+  display: flex;
+}
+
+.footer .row .column {
+  width: 21.6%;
+}
+
+.footer .row .column:first-child {
+  width: 35%;
+}
+
+.footer .desc {
+  margin-top: 18px;
+  color: #bfbcb2;
+  max-width: 267px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.footer .socials {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+}
+
+.footer .socials a {
+  text-decoration: none;
+}
+
+.footer .socials a i {
+  color: #fff;
+}
+
+.footer .title {
+  padding-bottom: 14px;
+  padding-right: 48px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  border-bottom: 1px solid #59554b;
+  display: inline-block;
+}
+
+.footer .list {
+  margin-top: 28px;
+  list-style: none;
+}
+
+.footer .list a {
+  display: inline-block;
+  text-decoration: none;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  margin-bottom: 12px;
+}
+
+.footer .list strong {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.footer .copyright {
+  padding: 28px 0;
+  color: #807d74;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86;
 }
