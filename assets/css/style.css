@@ -14,20 +14,30 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.dp_none {
+  display: none;
+}
+
 #header {
   z-index: 1;
   position: sticky;
   top: -28px;
   background-color: #ffda77;
 }
+
 #header .body {
   display: flex;
   align-items: center;
   padding: 36px 0 8px;
 }
+
 #header .logo {
   width: 82px;
   height: 17px;
+}
+
+#header .body .bar {
+  display: none;
 }
 
 .nav {
@@ -64,6 +74,10 @@ body {
   color: #171100;
   cursor: pointer;
   font-weight: 500;
+}
+
+.nav .close {
+  display: none;
 }
 
 #header .btn_sign-up {
@@ -709,3 +723,55 @@ body {
   font-size: 1.4rem;
   line-height: 1.86;
 }
+
+/* END: FOOTER */
+
+/* RESPONSIVE */
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+  #header .body {
+    display: flex;
+    align-items: center;
+    padding: 8px 0 8px;
+  }
+
+  #header .main-content .body .btn_sign-up {
+    display: none;
+  }
+
+  #header .body .bar {
+    position: relative;
+    display: block;
+    padding: 8px;
+  }
+
+  .nav {
+    background-color: #f8f8ba;
+    margin: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+  }
+
+  .nav .ds_node {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+  }
+
+  .nav .ds_node li {
+    margin: 20px;
+  }
+}
+/* Tablet: width >= 740px and width < 1024px */
+/* Desktop: width >= 1024px */
+@media only screen and (min-width: 1024px) {
+  .nav {
+    display: block;
+  }
+}
+
+/* END: RESPONSIVE */
