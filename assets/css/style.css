@@ -19,16 +19,18 @@ body {
 }
 
 #header {
-  z-index: 1;
-  position: sticky;
-  top: -28px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   background-color: #ffda77;
+  z-index: 1;
 }
 
 #header .body {
   display: flex;
   align-items: center;
-  padding: 36px 0 8px;
+  padding: 8px 0 8px;
 }
 
 #header .logo {
@@ -112,6 +114,7 @@ body {
 }
 
 .learn {
+  margin-top: 48px;
   padding: 50px;
   background-color: #fbeecdb0;
   display: flex;
@@ -766,7 +769,46 @@ body {
     margin: 20px;
   }
 }
+
 /* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  #header .body {
+    display: flex;
+    align-items: center;
+    padding: 8px 0 8px;
+  }
+
+  #header .main-content .body .btn_sign-up {
+    display: none;
+  }
+
+  #header .body .bar {
+    position: relative;
+    display: block;
+    padding: 8px;
+  }
+
+  .nav {
+    background-color: #f8f8ba;
+    margin: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+  }
+
+  .nav .ds_node {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+  }
+
+  .nav .ds_node li {
+    margin: 20px;
+  }
+}
 /* Desktop: width >= 1024px */
 @media only screen and (min-width: 1024px) {
   .nav {
