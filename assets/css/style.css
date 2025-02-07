@@ -731,7 +731,7 @@ body {
 
 /* RESPONSIVE */
 /* Mobile: width < 740px */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 452px) {
   #header .body {
     display: flex;
     align-items: center;
@@ -865,7 +865,7 @@ body {
 }
 
 /* Tablet: width >= 740px and width < 1024px */
-@media only screen and (min-width: 451px) and (max-width: 1023px) {
+@media only screen and (min-width: 452px) and (max-width: 1023px) {
   #header .body {
     display: flex;
     align-items: center;
@@ -916,13 +916,13 @@ body {
 
   .leader_left .gt {
     background-color: #fff;
-    width: auto;
+
     width: 137px;
     border-radius: 40px;
     padding: 18px 11px;
     position: absolute;
-    bottom: 0;
-    right: -33px;
+    bottom: -17px;
+    right: -65px;
     box-shadow: 1px 3px 3px 1px #ddddddde;
   }
 
@@ -950,7 +950,7 @@ body {
   }
 
   .leader_right {
-    margin: auto 60px;
+    margin: 26px 65px;
     width: 340px;
   }
 
