@@ -2,6 +2,10 @@
   box-sizing: border-box;
   margin: 0;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 html {
   /* 1 rem sẽ = 10px */
@@ -19,7 +23,6 @@ body {
 }
 
 #header {
-  width: 100%;
   position: fixed;
   top: 0;
   right: 0;
@@ -114,15 +117,15 @@ body {
   text-decoration: none;
 }
 
+#content {
+  max-width: 100%;
+}
+
 .learn {
   margin-top: 48px;
   padding: 50px 10px;
   background-color: #fbeecdb0;
   display: flex;
-}
-
-.leader_right {
-  margin: 0 100px;
 }
 
 .leader_right .title {
@@ -159,9 +162,6 @@ body {
 }
 
 .btn-gr .btn-watch {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-width: 180px;
   line-height: 65px;
   color: #171100;
@@ -218,11 +218,6 @@ body {
   margin-right: auto;
 }
 
-.popular .main-content .popular-header {
-  display: flex;
-  justify-content: space-between;
-}
-
 .heading-lv2 {
   font-size: 3.8rem;
   color: #171100;
@@ -236,31 +231,6 @@ body {
   font-size: 1.8rem;
   margin-top: 20px;
   line-height: 1.67;
-  width: 458px;
-}
-
-.main-content .popular-header .icon-popular {
-  display: flex;
-  gap: 18px;
-}
-
-.main-content .popular-header .icon-popular .control-btn {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 2.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ffc121;
-  color: #ffc121;
-  background: transparent;
-}
-
-.main-content .popular-header .icon-popular .control-btn:hover {
-  cursor: pointer;
-  background-color: #ffc121;
-  color: #fff;
 }
 
 .main-content .course_list {
@@ -441,17 +411,8 @@ body {
   justify-content: space-between;
 }
 
-.features .main-content .images {
-  display: flex;
-  gap: 30px;
-}
-
-.lower {
-  margin-top: 34px;
-}
-
 .features .main-content .images .fs_image {
-  width: 270px;
+  width: 560px;
   height: 405px;
   object-fit: cover;
   border-radius: 16px;
@@ -685,13 +646,20 @@ body {
 
 /* RESPONSIVE */
 /* Mobile: width < 740px */
-@media only screen and (max-width: 740px) {
-  #header .body {
-    display: flex;
-    align-items: center;
-    padding: 8px 0 8px;
+@media only screen and (max-width: 500px) {
+  .btn {
+    width: 100%;
+    padding: 0;
+  }
+  .btn-gr {
+    display: block;
   }
 
+  .btn-gr .btn-watch {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 740px) {
   #header .main-content .body .btn_sign-up {
     display: none;
   }
@@ -750,9 +718,6 @@ body {
   }
 
   .btn-gr .btn-watch {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-width: 150px;
     line-height: 65px;
     color: #171100;
@@ -771,12 +736,7 @@ body {
 
   .main-content .course_list {
     display: block;
-    margin-left: 26%;
     width: 100%;
-  }
-
-  .main-content .course_list .course_item {
-    width: 54%;
   }
 
   .main-content .course_list .course_item .course_info,
@@ -827,10 +787,6 @@ body {
 
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
-  #header {
-    width: 100%;
-  }
-
   #header .body {
     display: flex;
     align-items: center;
