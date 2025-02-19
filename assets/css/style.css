@@ -6,7 +6,6 @@ html,
 body {
   overflow-x: hidden;
 }
-
 html {
   /* 1 rem sẽ = 10px */
   font-size: 62.5%;
@@ -45,49 +44,33 @@ body {
   display: none;
 }
 
-.nav {
-  margin-left: auto;
-}
-
-.nav .ds_node {
+#header .btn-dki-dnhap {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: calc(800px - 100px);
+  gap: 20px;
+  margin: 10px;
 }
 
-.nav .ds_node .active {
-  color: #171100;
-}
-
-.nav .ds_node .active::after {
-  content: "";
-  display: block;
-  margin-top: 2px;
-  height: 3px;
-  width: 22px;
-  background-color: #171100;
-}
-
-.nav .ds_node li {
-  font-size: 1.6rem;
-  font-weight: 400;
-  margin-right: 20px;
-  color: #5f5b53;
-}
-
-.nav .ds_node li:hover {
-  color: #171100;
+#header .btn-dki-dnhap .btn-header {
   cursor: pointer;
-  font-weight: 500;
+  background: none;
+  border: none;
+  border-radius: 99px;
 }
 
-.nav .close {
-  display: none;
+#header .btn-dki-dnhap .btn-header:hover {
+  opacity: 0.9;
 }
 
-#header .btn_sign-up {
-  min-width: 144px;
-  margin-left: 49px;
+#header .btn-dki-dnhap .btn_dangki {
+  color: #171100;
+  background-color: #fff;
+  padding: 9px 20px;
+}
+
+#header .btn-dki-dnhap .btn_dangnhap {
+  color: #fff;
+  background-color: #171100;
+  padding: 9px 20px;
 }
 
 .btn {
