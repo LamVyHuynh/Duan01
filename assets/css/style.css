@@ -617,6 +617,11 @@ body {
   padding: 96px 135px 0;
 }
 
+.logoFooter {
+  width: 150px;
+  height: 150px;
+}
+
 #footer .row {
   padding-bottom: 38px;
   border-bottom: 1px solid #59554b;
