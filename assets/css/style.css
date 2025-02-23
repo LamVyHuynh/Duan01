@@ -18,6 +18,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --primary-color--red: #ee4d2d;
+}
 .dp_none {
   display: none;
 }
@@ -269,7 +272,7 @@ body {
 }
 
 /* popular */
-.popular {
+.container_courses {
   margin-top: 50px;
 }
 .main-content {
@@ -285,13 +288,6 @@ body {
   font-weight: 600;
 }
 
-.main-content .popular-header .info_popular .desc_popular {
-  color: #5f5b53;
-  font-size: 1.8rem;
-  margin-top: 20px;
-  line-height: 1.67;
-}
-
 .main-content .course_list {
   display: flex;
   gap: 30px;
@@ -303,7 +299,6 @@ body {
   overflow: hidden;
   background-color: #00000008;
   margin-bottom: 50px;
-  cursor: pointer;
   width: 33.33%;
 }
 
@@ -313,7 +308,8 @@ body {
 }
 
 .main-content .course_list .course_item .course_img {
-  height: 278px;
+  height: 200px;
+  width: 100%;
 }
 
 .main-content .course_list .course_item .course_info {
@@ -325,14 +321,15 @@ body {
   justify-content: space-between;
 }
 
+.course_list .course_item .course_info .course_info_header .course_link {
+  text-decoration: none;
+}
+
 .course_item .course_info .course_info_header .course_name {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.25;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .course_info .course_info_header .course_rating .rating_star {
@@ -355,27 +352,21 @@ body {
   text-overflow: ellipsis;
 }
 
-.course_list .course_item .course_info .price_buy {
+.course_list .course_item .course_info .price {
   display: flex;
-  justify-content: space-between;
   margin-top: 10px;
+  gap: 10px;
 }
 
-.course_item .course_info .price_buy .price_value {
-  color: #171100;
-  font-size: 2.5rem;
+.course_item .course_info .price .price_value {
+  color: var(--primary-color--red);
+  font-size: 1.6rem;
   font-weight: 600;
-  line-height: 1.67;
 }
 
-.course_item .course_info .price_buy .btn_buy {
-  background-color: #171100;
-  color: #fff;
-  font-weight: 600;
+.course_item .course_info .price .price_value_old {
+  text-decoration: line-through;
   font-size: 1.4rem;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 40px;
 }
 
 .course_item .course_info .price_buy .btn_buy:hover {
