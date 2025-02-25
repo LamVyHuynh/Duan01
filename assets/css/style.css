@@ -191,7 +191,54 @@ body {
   margin-top: 8px;
   font-size: 1.6rem;
 }
-/* popular */
+
+/* Banner */
+.banner {
+  width: 100%;
+  margin: 50px 20px;
+}
+
+.banner .banner_item {
+  position: relative;
+}
+
+.banner .banner-img-container {
+  width: 1240px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.banner .banner-img-container .banner-img {
+  width: 100%;
+}
+
+.banner .arrow-next {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 3px 6px #00000029;
+  font-size: 1.2rem;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  color: #4b4b4b;
+  position: absolute;
+  top: 50%;
+}
+
+.banner .arrow-right {
+  right: 20px;
+  transform: translate(0, -50%);
+}
+
+.banner .arrow-left {
+  left: -20px;
+  transform: translate(0, -50%);
+}
+
+/* Banner */
+/* Course */
 .container_courses {
   margin-top: 50px;
 }
