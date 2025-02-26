@@ -236,11 +236,11 @@ input[type="radio"] {
 }
 
 #slider2:checked ~ .banner_item {
-  transform: translateX(-100%);
+  transform: translateX(-1240px);
 }
 
 #slider3:checked ~ .banner_item {
-  transform: translateX(-200%);
+  transform: translateX(-2480px);
 }
 
 #slider1:checked ~ .dot .dot1,
