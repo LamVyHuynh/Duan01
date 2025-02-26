@@ -18,8 +18,12 @@ body {
   --primary-color--red: #ee4d2d;
 }
 
-.dp_none {
+.close {
   display: none;
+}
+
+.open {
+  display: block;
 }
 
 #header {
@@ -443,3 +447,115 @@ input[type="radio"] {
 }
 
 /* END: FOOTER */
+
+/* BẮT ĐẦU: ĐĂNG KÝ, ĐĂNG NHẬP */
+#dki_dnhap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+#dki_dnhap .container-dki--dnhap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#dki_dnhap .container-dki--dnhap .dki {
+  background-color: #fff;
+  padding: 30px;
+  font-size: 1.7rem;
+  border-radius: 40px;
+}
+
+#dki_dnhap .container-dki--dnhap .dki .header-dki {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#dki_dnhap .container-dki--dnhap .dki .header-dki .title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 2;
+}
+
+#dki_dnhap .container-dki--dnhap .dki .header-dki .desc {
+  font-size: 1.4rem;
+  width: min(400px, 90%);
+  line-height: 1.5;
+  color: var(--primary-color--red);
+  margin: 0 auto;
+}
+
+#dki_dnhap .container-dki--dnhap .dki .header-dki .icon-close {
+  cursor: pointer;
+  position: absolute;
+  top: -36px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.3rem;
+  background-color: #16182308;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #333;
+  line-height: 0;
+  border: none;
+}
+#dki_dnhap .container-dki--dnhap .dki .body-dki {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+#dki_dnhap .container-dki--dnhap .dki .body-dki .frame-dki {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#dki_dnhap .container-dki--dnhap .dki .body-dki .frame-dki .input--dki {
+  padding: 20px 10px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  height: 30px;
+}
+
+#dki_dnhap .container-dki--dnhap .dki .body-dki .social-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+#dki_dnhap .container-dki--dnhap .dki .body-dki .social-list .btn-social--item {
+  cursor: pointer;
+
+  border-radius: 50%;
+  border: none;
+  font-size: 2.9rem;
+}
+
+#dki_dnhap .container-dki--dnhap .dki .footer-dki {
+  text-align: center;
+  max-width: 360px;
+  margin: 0 auto;
+}
+#dki_dnhap .container-dki--dnhap .dki .footer-dki .desc {
+  margin-bottom: 10px;
+}
+#dki_dnhap .container-dki--dnhap .dki .footer-dki .link {
+  font-weight: 600;
+  color: #fea31b;
+}
+
+/* KẾT THÚC: ĐĂNG KÝ, ĐĂNG NHẬP */
