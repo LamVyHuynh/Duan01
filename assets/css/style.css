@@ -254,6 +254,7 @@ input[type="radio"] {
 }
 
 /* Banner */
+
 /* Course */
 .container_courses {
   margin-top: 50px;
@@ -457,6 +458,7 @@ input[type="radio"] {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
+  animation: modalFadeIn ease 0.4s;
 }
 
 #dki_dnhap .container-dki--dnhap {
@@ -556,6 +558,15 @@ input[type="radio"] {
 #dki_dnhap .container-dki--dnhap .dki .footer-dki .link {
   font-weight: 600;
   color: #fea31b;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* KẾT THÚC: ĐĂNG KÝ, ĐĂNG NHẬP */
